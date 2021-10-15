@@ -4,7 +4,7 @@ This is a pytorch implementation of the paper [Bottleneck Transformers for Visua
 ## Method
 This paper implements the attention mechanism into different ResNet architectures. The used design of one attention layer can be displayed as shown
 
-![botnet_layer](https://user-images.githubusercontent.com/19909320/119896434-4cf68000-bf3f-11eb-9ceb-7c6f9bb324a0.png)
+![BoTNet](https://user-images.githubusercontent.com/19909320/137499600-327e82d6-f6ac-42ac-8b59-7b195caac090.png)
 
 Global Self-Attention on images is subject to the problem, that it can only be applied after significant
 spatial downsampling of the input. Every pixels relation is calculated to every other pixel so learning gets computationally very expensive, which prevents its usage across all layers in a fully attentional model.
@@ -12,8 +12,6 @@ spatial downsampling of the input. Every pixels relation is calculated to every 
 Consequently in this paper the authors only apply their attention mechanism in the last stage of the respective architecture, here ResNet50:
 
 ![botnet](https://user-images.githubusercontent.com/19909320/119896460-567fe800-bf3f-11eb-815b-db71ae6b1908.png)
-
-![BoTNet](https://user-images.githubusercontent.com/19909320/137499600-327e82d6-f6ac-42ac-8b59-7b195caac090.png)
 
 ## Implementation details
 I only tested the implementation with ResNet50 for now. The used ResNet V1.5 architectures are adapted from https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py
