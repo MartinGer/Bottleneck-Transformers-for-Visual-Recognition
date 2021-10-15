@@ -13,6 +13,8 @@ Consequently in this paper the authors only apply their attention mechanism in t
 
 ![botnet](https://user-images.githubusercontent.com/19909320/119896460-567fe800-bf3f-11eb-815b-db71ae6b1908.png)
 
+![BoTNet](https://user-images.githubusercontent.com/19909320/137499600-327e82d6-f6ac-42ac-8b59-7b195caac090.png)
+
 ## Implementation details
 I only tested the implementation with ResNet50 for now. The used ResNet V1.5 architectures are adapted from https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py
 
